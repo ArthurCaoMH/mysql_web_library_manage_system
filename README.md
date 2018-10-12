@@ -1,0 +1,2 @@
+# mysql_web_library_manage_system
+利用MySQL和web前端语言实现了图书管理系统
