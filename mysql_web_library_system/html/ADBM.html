@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin's Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/Admin.css" />
+    <script src="../js/MyLibrary.js"></script>
+</head>
+<body onload="displayAB()">
+    <div id=back>
+        <div>
+            <h1>Admin's Library Manager</h1>
+        </div>
+        <div>
+            <input type="button" name="clicktosearch" value="" id="Find" onclick="searchADB()"/>
+            <input type="search" name="search" 
+            value="Please input Book Bno or Reader Rno" 
+            onfocus="if(this.value=='Please input Book Bno or Reader Rno'){this.value='';this.style.color='black'}" 
+            onblur="if(this.value==''){this.value='Please input Book Bno or Reader Rno';this.style.color='#999'}" id="Search"/>
+        </div>
+        <div>
+            <p id="ListReader">Readers:</p>
+            <div id="Reader"></div>
+            <p id="ListBook">Books:</p>
+            <div id="Book"></div>
+        </div>
+        <div id="option">
+           <input type="text" name="optionRB" 
+           value="Pleasae Input Bno of the book or Rno of a reader you want to add or delete or update" 
+           onfocus="if(this.value=='Pleasae Input Bno of the book or Rno of a reader you want to add or delete or update'){this.value='';this.style.color='black'}" 
+           onblur="if(this.value==''){this.value='Pleasae Input Bno of the book or Rno of a reader you want to add or delete or update';this.style.color='#999'}" 
+           id="adddele"/>
+           <input type="button" name="optionRB" value="AddReader" id="AR" onclick="DBAR()"/>
+           <input type="button" name="optionRB" value="UpdateReader" id="UR" onclick="DBUR()"/>
+           <input type="button" name="optionRB" value="DeleteReader" id="DR" onclick="DBDR()"/>
+           <input type="button" name="optionRB" value="AddBook" id="AB" onclick="DBAB()"/>
+           <input type="button" name="optionRB" value="UpdateBook" id="UB" onclick="DBUB()"/>
+           <input type="button" name="optionRB" value="DeleteBook" id="DB" onclick="DBDB()"/>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+#user_name,#user_pass
+{
+    width: 20em;
+    margin-left: 1em;
+    color: #999;
+}
+#user_name
+{
+    margin-top: 2em;
+}
+#back1
+{
+    background: rgba(6, 129, 151, 0.6) center;
+    height: 10em;
+    position: relative;
+    top: 5em;
+    width: 40em;
+    margin: 0 auto;
+}
+#login
+{
+    text-align: center;
+    margin-top: 13em;
+    height: 20em;
+    background: url(../images/uestc.jpg) no-repeat center;
+    position: relative;
+}
+body
+{
+    background: url(../images/library.jpg) center;   
+    margin:0 auto;
+    position: relative;
+}
+
+#back2
+{
+    width: auto;
+    height: 1080px;
+    border:solid;
+    position: relative;
+}

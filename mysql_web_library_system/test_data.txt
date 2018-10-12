@@ -1,0 +1,30 @@
+创建数据库：
+create database LibraryDB;
+创建表：
+CREATE TABLE Admin (id char(8) primary key,password varchar(20) not null,name varchar(10),tel char(11) unique)Engine=innoDB default charset=utf8;
+CREATE TABLE Book (Bno char(8) primary key,type char(10),title varchar(40),author varchar(20),total int,state char(10))Engine=innoDB default charset=utf8;
+CREATE TABLE Reader (Rno char(8) primary key,Rpwd varchar(20) not null,Rname varchar(10),Rtel char(11) unique)Engine=innoDB default charset=utf8;
+CREATE TABLE Record (Rno char(8),Bno char(8),BDate Date,RDate Date,FOREIGN KEY (Rno) REFERENCES Reader(Rno),FOREIGN KEY (Bno) REFERENCES Book(Bno))Engine=innoDB default charset=utf8;
+
+表中数据：
+Admin：
+"201606","123456","Arthur","15520762063"
+"201607","123458","Arthur4","15520762863"
+
+Book：
+"001206","Policy","The Policy And Economics","Thmos","6","yes"
+"001207","Novel","A Midsummer Nights Dream","W. William Shakespeare","5","yes"
+"001812","Masterpiece","The Old Man and the Sea","Ernest Miller Hemingway","4","no"
+"001606","Papers","Pickwick Papers","Charles Dickens","6","yes"
+"001318","Novel","The Red and the Black","Stendhal","3","no"
+"001736","CS","Father Goriot","Honore de Balzac","7","yes"
+
+               
+Reader：
+"201706","2123456","Bliman","17856485468"
+"201506","4123456","Tulum","18745389214"
+"201306","4123456","Tony","14745329214"
+"201206","4123456","Amyli","13745489214"
+Record：
+无
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+<meta charset="utf-8"/>
+    <title>websql图书管理系统</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+</head>
+<body onload="optionDB()">
+    <div id="back2"> 
+        <div id="login">
+            <form method="get" id="back1">
+                <p>
+                Username<input type="text" name="username" 
+                value="Pleasae Input Your Name" 
+                onfocus="if(this.value=='Pleasae Input Your Name'){this.value='';this.style.color='black'}" 
+                onblur="if(this.value==''){this.value='Pleasae Input Your Name';this.style.color='#999'}" id="user_name"/>
+                </p>
+                <p>
+                Password<input type="password" name="username" id="user_pass">
+                </p>
+                <input type="button" value="Login In" onclick="checklogin()"/>
+            </form>
+        </div>      
+    </div> 
+    <script src="../js/MyLibrary.js"></script>
+</body>
+</html>

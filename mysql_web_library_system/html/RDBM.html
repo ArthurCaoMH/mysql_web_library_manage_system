@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Readers' Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/Reader.css" />
+</head>
+<body onload="displayRB()">
+    <div id=back>
+        <div>
+            <h1>Welcome to Readers' Library</h1>
+        </div>
+        <div>
+            <input type="button" name="clicktosearch" value="" id="Find" onclick="searchRDB()"/>
+            <input type="search" name="search" 
+            value="Please input Book Bno" 
+            onfocus="if(this.value=='Please input Book Bno'){this.value='';this.style.color='black'}" 
+            onblur="if(this.value==''){this.value='Please input Book Bno';this.style.color='#999'}" id="Search"/>
+        </div>
+        <div>
+            <p id="ListBook">All Books in this Library:</p>
+            <div id="Book"></div>
+        </div>
+        <div id="option">
+            <input type="text" name="optionRB" 
+            value="Pleasae Input Bno of the book you want to borrow or return" 
+            onfocus="if(this.value=='Pleasae Input Bno of the book you want to borrow or return'){this.value='';this.style.color='black'}" 
+            onblur="if(this.value==''){this.value='Pleasae Input Bno of the book you want to borrow or return';this.style.color='#999'}" 
+            id="adddele"/>
+           <input type="button" name="optionRB" value="BorrowBook" id="BB" onclick="DBBB()"/>
+           <input type="button" name="optionRB" value="ReturnBook" id="RB" onclick="DBRB()"/>
+        </div>
+    </div>
+    <script src="../js/MyLibrary.js"></script>
+</body>
+</html>

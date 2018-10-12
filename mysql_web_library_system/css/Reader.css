@@ -1,0 +1,88 @@
+body{
+    background: url(../images/Reader.jpg);
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+#back{
+    background:rgba(7, 144, 168, 0.2);
+    position: relative;
+    border:solid;
+    width: auto;
+    height: 1080px;
+}
+h1{
+    text-align: center;
+    border: 0.2em;
+    color: rgb(255, 123, 0);
+    background: rgb(150, 23, 139);
+    position: relative;
+    width: 20em;
+    margin: 1.5em auto 0.5em auto; 
+}
+#Search,#Find{
+    position: relative;
+    float: right;
+}
+#Find{
+    width: 36px;
+    height: 32px;
+    background: url(../images/searchR.jpg) no-repeat black;
+    border: white solid;
+}
+#Search{
+    height: 32px;
+    width: 32em;
+    color: #999;
+    border-style: none;
+    background: rgba(221, 219, 219, 0.932);
+  
+}
+#Book{
+    height: 16em;
+    width: 94%;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    background: rgba(54, 226, 203, 0.6);
+    border:solid 0.5em rgb(4, 5, 66);
+    position: relative;
+    float: left;
+    clear: both;
+    left: 2em;
+    padding: 0.6em;
+}
+#ListBook{
+    position: relative;
+    text-align: center;
+    float: left;
+    clear: both;
+    width: 100%;
+    border: solid #7CCD7C;
+    background: #7CCD7C;
+    margin: 3em 0 0.5em 0;
+    font-size: 1.5em;
+}
+#option{    
+    position: relative;
+    left: 2em;
+    float:left;
+    clear: both;
+    margin-top: 2em;    
+}
+input{
+    margin: 0.2em;
+    padding: 0.3em;
+    background: rgb(226,142,32);
+    border:solid rgb(226, 142, 32);
+    color: white;
+    font-weight: bold;
+}
+#adddele{
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    background: white;
+    border: white;
+    color: #999;
+    width: 60em;
+}
